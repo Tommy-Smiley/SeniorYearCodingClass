@@ -1,0 +1,4 @@
+sceneSetups:
+- path: C:/Users/tomsm/OneDrive - Academy District 20/Extra/Paltformer/Assets/Scenes/Level1.unity
+  isLoaded: 1
+  isActive: 1
