@@ -306,7 +306,7 @@ namespace Classwork
             Console.ReadKey();
             Console.WriteLine();
             */
-            //----------------------------------------------------------
+            //----------------------------------------------------------xd
             string text = File.ReadAllText(@"C:/Users/136062/OneDrive - Academy District 20/English Class");
             Console.WriteLine(text);
         }
