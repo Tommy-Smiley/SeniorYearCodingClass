@@ -6,8 +6,8 @@ using UnityEngine.SceneManagement;
 public class Player : MonoBehaviour
 {
 
-    float jump = 4;
-    float speed = 3;
+    float jump = 8;
+    float speed = 8;
     int jumpcount = 2;
 
     Vector3 velocity = new Vector3(0, 0, 0);
@@ -28,7 +28,9 @@ public class Player : MonoBehaviour
         rbody = GetComponent<Rigidbody2D>();
         spriterenderer = GetComponent<SpriteRenderer>();
         if (spriterenderer.sprite == null)
+        {
             spriterenderer.sprite = Penguinz;
+        }
     }
 
     void Update()
@@ -52,7 +54,7 @@ public class Player : MonoBehaviour
         if (Input.GetKeyUp(KeyCode.UpArrow))
         {
             changethedamnspriteback();
-            rbody.GetComponent<Rigidbody2D>().gravityScale = 1.7f;
+            rbody.GetComponent<Rigidbody2D>().gravityScale = 1.9f;
         }
 
         if (Input.GetKey(KeyCode.LeftArrow))
@@ -74,7 +76,7 @@ public class Player : MonoBehaviour
             GameManager.Instance.myPlayer = this;
         }
 
-        rbody.velocity = new Vector3(Mathf.Clamp(velocity.x, -3f, 3f), Mathf.Clamp(velocity.y, -4f, 4f), 0);
+        rbody.velocity = new Vector3(Mathf.Clamp(velocity.x, -8f, 8f), Mathf.Clamp(velocity.y, -8f, 8f), 0);
 
     }
     
