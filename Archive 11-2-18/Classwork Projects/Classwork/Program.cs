@@ -306,9 +306,44 @@ namespace Classwork
             Console.ReadKey();
             Console.WriteLine();
             */
-            //----------------------------------------------------------xd
-            string text = File.ReadAllText(@"C:/Users/136062/OneDrive - Academy District 20/English Class");
-            Console.WriteLine(text);
+            //----------------------------------------------------------
+            int b = 7;
+            int[] array1 = new int[5] { 1, 2, 3, 4, 5 };
+            int[,] array2 = new int[2, 2] { { 1, 3 }, { 5, 9 } };
+            int[][] array3 = new int[4][];
+
+            int[] fill1 = new int[] { 7, 4, 3 };
+            int[] fill2 = new int[] { 9, 8, 1, 3, 6, 8 };
+            int[] fill3 = new int[] { 5, 5 };
+            int[] fill4 = new int[] { 2, 4, 4, 2, 4, 5, 7, 8, 1 };
+
+            array3[0] = fill1;
+            array3[1] = fill2;
+            array3[2] = fill3;
+            array3[3] = fill4;
+
+            //print(b);
+            //print(array1);
+            //print(array2);
+            //print(array3);
+
+            //---------------------------------------------------------------------------------
+
+            double x = Math.PI;
+            string temp = "0.";
+            Console.Write("Enter a precision value: ");
+            int val = int.Parse(Console.ReadLine());
+
+            for (int i = 0; i < val; i++)
+            {
+                temp += ("#");
+            }
+            Console.Write(x.ToString(temp));
+
+            Console.ReadKey();
+
+            //---------------------------------------------------------------------------------
+
         }
 
         /*
@@ -413,8 +448,146 @@ namespace Classwork
         }
         */
         //-------------------------------------------------------------------
+
+        static void print(int a)
+        {
+            Console.WriteLine("|" + a + "|");
+            Console.WriteLine();
+        }
+        static void print(int[] array)
+        {
+            for (int i = 0; i < array.Length; i++)
+            {
+                Console.Write("|" + array[i] + "|");
+            }
+            Console.WriteLine("\n");
+        }
+        static void print(int[,] array)
+        {
+            for (int i = 0; i < array.GetLength(0); i++)
+            {
+                for (int j = 0; j < array.GetLength(1); j++)
+                {
+                    Console.Write("|" + array[i, j] + "|");
+                }
+                Console.WriteLine();
+            }
+            Console.WriteLine();
+        }
+        static void print(int[][] array)
+        {
+            for (int i = 0; i < array.GetLength(0); i++)
+            {
+                for (int j = 0; j < array[i].Length; j++)
+                {
+                    Console.Write("|" + array[i][j] + "|");
+                }
+                Console.WriteLine();
+            }
+            Console.WriteLine();
+        }
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

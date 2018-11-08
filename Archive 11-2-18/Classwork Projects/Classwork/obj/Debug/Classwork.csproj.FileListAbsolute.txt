@@ -19,3 +19,10 @@ C:\Users\tomsm\OneDrive - Academy District 20\Coding Class\Classwork Projects\Cl
 C:\Users\tomsm\OneDrive - Academy District 20\Coding Class\Classwork Projects\Classwork\obj\Debug\Classwork.csproj.CoreCompileInputs.cache
 C:\Users\tomsm\OneDrive - Academy District 20\Coding Class\Classwork Projects\Classwork\obj\Debug\Classwork.exe
 C:\Users\tomsm\OneDrive - Academy District 20\Coding Class\Classwork Projects\Classwork\obj\Debug\Classwork.pdb
+C:\Users\136062\Documents\SeniorYearCodingClass\Archive 11-2-18\Classwork Projects\Classwork\bin\Debug\Classwork.exe.config
+C:\Users\136062\Documents\SeniorYearCodingClass\Archive 11-2-18\Classwork Projects\Classwork\bin\Debug\Classwork.exe
+C:\Users\136062\Documents\SeniorYearCodingClass\Archive 11-2-18\Classwork Projects\Classwork\bin\Debug\Classwork.pdb
+C:\Users\136062\Documents\SeniorYearCodingClass\Archive 11-2-18\Classwork Projects\Classwork\obj\Debug\Classwork.csprojAssemblyReference.cache
+C:\Users\136062\Documents\SeniorYearCodingClass\Archive 11-2-18\Classwork Projects\Classwork\obj\Debug\Classwork.csproj.CoreCompileInputs.cache
+C:\Users\136062\Documents\SeniorYearCodingClass\Archive 11-2-18\Classwork Projects\Classwork\obj\Debug\Classwork.exe
+C:\Users\136062\Documents\SeniorYearCodingClass\Archive 11-2-18\Classwork Projects\Classwork\obj\Debug\Classwork.pdb
