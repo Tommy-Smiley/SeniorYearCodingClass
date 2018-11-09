@@ -1,7 +1,0 @@
-C:\Users\136062\OneDrive - Academy District 20\Coding Class\tsmiley_Palindrome\tsmiley_Palindrome\bin\Debug\tsmiley_Palindrome.exe.config
-C:\Users\136062\OneDrive - Academy District 20\Coding Class\tsmiley_Palindrome\tsmiley_Palindrome\bin\Debug\tsmiley_Palindrome.exe
-C:\Users\136062\OneDrive - Academy District 20\Coding Class\tsmiley_Palindrome\tsmiley_Palindrome\bin\Debug\tsmiley_Palindrome.pdb
-C:\Users\136062\OneDrive - Academy District 20\Coding Class\tsmiley_Palindrome\tsmiley_Palindrome\obj\Debug\tsmiley_Palindrome.csprojAssemblyReference.cache
-C:\Users\136062\OneDrive - Academy District 20\Coding Class\tsmiley_Palindrome\tsmiley_Palindrome\obj\Debug\tsmiley_Palindrome.csproj.CoreCompileInputs.cache
-C:\Users\136062\OneDrive - Academy District 20\Coding Class\tsmiley_Palindrome\tsmiley_Palindrome\obj\Debug\tsmiley_Palindrome.exe
-C:\Users\136062\OneDrive - Academy District 20\Coding Class\tsmiley_Palindrome\tsmiley_Palindrome\obj\Debug\tsmiley_Palindrome.pdb

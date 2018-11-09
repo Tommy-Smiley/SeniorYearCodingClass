@@ -1,7 +1,0 @@
-C:\Users\136062\OneDrive - Academy District 20\Coding Class\tsmiley_CompetencyExam\tsmiley_CompetencyExam\bin\Debug\tsmiley_CompetencyExam.exe.config
-C:\Users\136062\OneDrive - Academy District 20\Coding Class\tsmiley_CompetencyExam\tsmiley_CompetencyExam\bin\Debug\tsmiley_CompetencyExam.exe
-C:\Users\136062\OneDrive - Academy District 20\Coding Class\tsmiley_CompetencyExam\tsmiley_CompetencyExam\bin\Debug\tsmiley_CompetencyExam.pdb
-C:\Users\136062\OneDrive - Academy District 20\Coding Class\tsmiley_CompetencyExam\tsmiley_CompetencyExam\obj\Debug\tsmiley_CompetencyExam.csprojAssemblyReference.cache
-C:\Users\136062\OneDrive - Academy District 20\Coding Class\tsmiley_CompetencyExam\tsmiley_CompetencyExam\obj\Debug\tsmiley_CompetencyExam.csproj.CoreCompileInputs.cache
-C:\Users\136062\OneDrive - Academy District 20\Coding Class\tsmiley_CompetencyExam\tsmiley_CompetencyExam\obj\Debug\tsmiley_CompetencyExam.exe
-C:\Users\136062\OneDrive - Academy District 20\Coding Class\tsmiley_CompetencyExam\tsmiley_CompetencyExam\obj\Debug\tsmiley_CompetencyExam.pdb

@@ -1,7 +1,0 @@
-C:\Users\RYAN.DARRAS\OneDrive - Academy District 20\Assignments\IntroRecap\IntroRecap\bin\Debug\IntroRecap.exe.config
-C:\Users\RYAN.DARRAS\OneDrive - Academy District 20\Assignments\IntroRecap\IntroRecap\bin\Debug\IntroRecap.exe
-C:\Users\RYAN.DARRAS\OneDrive - Academy District 20\Assignments\IntroRecap\IntroRecap\bin\Debug\IntroRecap.pdb
-C:\Users\RYAN.DARRAS\OneDrive - Academy District 20\Assignments\IntroRecap\IntroRecap\obj\Debug\IntroRecap.csprojAssemblyReference.cache
-C:\Users\RYAN.DARRAS\OneDrive - Academy District 20\Assignments\IntroRecap\IntroRecap\obj\Debug\IntroRecap.csproj.CoreCompileInputs.cache
-C:\Users\RYAN.DARRAS\OneDrive - Academy District 20\Assignments\IntroRecap\IntroRecap\obj\Debug\IntroRecap.exe
-C:\Users\RYAN.DARRAS\OneDrive - Academy District 20\Assignments\IntroRecap\IntroRecap\obj\Debug\IntroRecap.pdb

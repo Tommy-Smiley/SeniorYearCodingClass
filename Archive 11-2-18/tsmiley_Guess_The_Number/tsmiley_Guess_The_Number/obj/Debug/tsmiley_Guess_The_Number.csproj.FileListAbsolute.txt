@@ -1,7 +1,0 @@
-C:\Users\136062\OneDrive - Academy District 20\Coding Class\tsmiley_Guess_The_Number\tsmiley_Guess_The_Number\bin\Debug\tsmiley_Guess_The_Number.exe.config
-C:\Users\136062\OneDrive - Academy District 20\Coding Class\tsmiley_Guess_The_Number\tsmiley_Guess_The_Number\bin\Debug\tsmiley_Guess_The_Number.exe
-C:\Users\136062\OneDrive - Academy District 20\Coding Class\tsmiley_Guess_The_Number\tsmiley_Guess_The_Number\bin\Debug\tsmiley_Guess_The_Number.pdb
-C:\Users\136062\OneDrive - Academy District 20\Coding Class\tsmiley_Guess_The_Number\tsmiley_Guess_The_Number\obj\Debug\tsmiley_Guess_The_Number.csprojAssemblyReference.cache
-C:\Users\136062\OneDrive - Academy District 20\Coding Class\tsmiley_Guess_The_Number\tsmiley_Guess_The_Number\obj\Debug\tsmiley_Guess_The_Number.csproj.CoreCompileInputs.cache
-C:\Users\136062\OneDrive - Academy District 20\Coding Class\tsmiley_Guess_The_Number\tsmiley_Guess_The_Number\obj\Debug\tsmiley_Guess_The_Number.exe
-C:\Users\136062\OneDrive - Academy District 20\Coding Class\tsmiley_Guess_The_Number\tsmiley_Guess_The_Number\obj\Debug\tsmiley_Guess_The_Number.pdb

@@ -1,7 +1,0 @@
-C:\Users\136062\source\repos\tsmiley_Tic-Tac-Toe\tsmiley_Tic-Tac-Toe\bin\Debug\tsmiley_Tic-Tac-Toe.exe.config
-C:\Users\136062\source\repos\tsmiley_Tic-Tac-Toe\tsmiley_Tic-Tac-Toe\bin\Debug\tsmiley_Tic-Tac-Toe.exe
-C:\Users\136062\source\repos\tsmiley_Tic-Tac-Toe\tsmiley_Tic-Tac-Toe\bin\Debug\tsmiley_Tic-Tac-Toe.pdb
-C:\Users\136062\source\repos\tsmiley_Tic-Tac-Toe\tsmiley_Tic-Tac-Toe\obj\Debug\tsmiley_Tic-Tac-Toe.csprojAssemblyReference.cache
-C:\Users\136062\source\repos\tsmiley_Tic-Tac-Toe\tsmiley_Tic-Tac-Toe\obj\Debug\tsmiley_Tic-Tac-Toe.csproj.CoreCompileInputs.cache
-C:\Users\136062\source\repos\tsmiley_Tic-Tac-Toe\tsmiley_Tic-Tac-Toe\obj\Debug\tsmiley_Tic-Tac-Toe.exe
-C:\Users\136062\source\repos\tsmiley_Tic-Tac-Toe\tsmiley_Tic-Tac-Toe\obj\Debug\tsmiley_Tic-Tac-Toe.pdb
