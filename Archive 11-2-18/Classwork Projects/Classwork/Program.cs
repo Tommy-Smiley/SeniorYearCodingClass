@@ -339,7 +339,7 @@ namespace Classwork
                 temp += ("#");
             }
             Console.Write(x.ToString(temp));
-
+            Console.WriteLine("\nEnd");
             Console.ReadKey();
 
             //---------------------------------------------------------------------------------

@@ -26,3 +26,10 @@ C:\Users\136062\Documents\SeniorYearCodingClass\Archive 11-2-18\Classwork Projec
 C:\Users\136062\Documents\SeniorYearCodingClass\Archive 11-2-18\Classwork Projects\Classwork\obj\Debug\Classwork.csproj.CoreCompileInputs.cache
 C:\Users\136062\Documents\SeniorYearCodingClass\Archive 11-2-18\Classwork Projects\Classwork\obj\Debug\Classwork.exe
 C:\Users\136062\Documents\SeniorYearCodingClass\Archive 11-2-18\Classwork Projects\Classwork\obj\Debug\Classwork.pdb
+D:\Source Control\Archive 11-2-18\Classwork Projects\Classwork\bin\Debug\Classwork.exe.config
+D:\Source Control\Archive 11-2-18\Classwork Projects\Classwork\bin\Debug\Classwork.exe
+D:\Source Control\Archive 11-2-18\Classwork Projects\Classwork\bin\Debug\Classwork.pdb
+D:\Source Control\Archive 11-2-18\Classwork Projects\Classwork\obj\Debug\Classwork.csprojAssemblyReference.cache
+D:\Source Control\Archive 11-2-18\Classwork Projects\Classwork\obj\Debug\Classwork.csproj.CoreCompileInputs.cache
+D:\Source Control\Archive 11-2-18\Classwork Projects\Classwork\obj\Debug\Classwork.exe
+D:\Source Control\Archive 11-2-18\Classwork Projects\Classwork\obj\Debug\Classwork.pdb
