@@ -307,6 +307,7 @@ namespace Classwork
             Console.WriteLine();
             */
             //----------------------------------------------------------
+            /*
             int b = 7;
             int[] array1 = new int[5] { 1, 2, 3, 4, 5 };
             int[,] array2 = new int[2, 2] { { 1, 3 }, { 5, 9 } };
@@ -326,9 +327,51 @@ namespace Classwork
             //print(array1);
             //print(array2);
             //print(array3);
-
+            */
             //---------------------------------------------------------------------------------
 
+            int[,] arrayboi = new int[10,10];
+            for (int i = 0; i < 10; i++)
+            {
+                for (int j = 0; j < 10; j++)
+                { 
+                    arrayboi[i,j] = i*j;
+                }
+            }
+
+            string path;
+            path = AppDomain.CurrentDomain.BaseDirectory + @"example.brody";
+
+            using (StreamWriter sw = new StreamWriter(path))
+            {
+                for (int i = 0; i < 10; i++)
+                {
+                    for (int j = 0; j < 10; j++)
+                    {
+                        sw.Write("|" + arrayboi[i, j] + "|");
+                    }
+                    sw.WriteLine();
+                }
+            }
+
+            List<string> file = new List<string>();
+            using (StreamReader sr = new StreamReader(path))
+            {
+                string line;
+                while((line = sr.ReadLine()) != null)
+                {
+                    file.Add(line);
+                }
+            }
+            for(int i = 0; i < file.Count; i++)
+            {
+                Console.Write(file[i]);
+                Console.WriteLine();
+            }
+            
+            Console.Read();
+            //---------------------------------------------------------------------------------
+            /*
             double x = Math.PI;
             string temp = "0.";
             Console.Write("Enter a precision value: ");
@@ -341,7 +384,7 @@ namespace Classwork
             Console.Write(x.ToString(temp));
             Console.WriteLine("\nEnd");
             Console.ReadKey();
-
+            */
             //---------------------------------------------------------------------------------
 
         }
