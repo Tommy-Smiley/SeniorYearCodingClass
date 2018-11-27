@@ -14,7 +14,7 @@ namespace Character
         public string eyecolor;
         public string gender;
 
-        public Character(string name, int age, float height, string eyecolor, string gender)
+        public Character(string name = "", int age = 0, float height = 0f, string eyecolor = "", string gender = "")
         {
             this.name = name;
             this.age = age;

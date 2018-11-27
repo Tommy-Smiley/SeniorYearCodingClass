@@ -18,72 +18,126 @@ namespace Character
                 Console.WriteLine("****************************");
                 Console.WriteLine("**1. Create a Character");
                 Console.WriteLine("**2. Modify a Character");
-                Console.WriteLine("**3. Delete a Character");
-                Console.WriteLine("**4. Load Existing Character");
-                Console.WriteLine("**5. List Characters");
-                Console.WriteLine("**6. Exit");
+                Console.WriteLine("**3. Save a Character");
+                Console.WriteLine("**4. Delete a Character");
+                Console.WriteLine("**5. Load Existing Characters");
+                Console.WriteLine("**6. List Characters");
+                Console.WriteLine("**7. Exit");
                 Console.WriteLine("****************************");
                 input = int.Parse(Console.ReadLine());
-                if(input == 1)
+                if (input == 1)
                 {
                     characters.Add(CreateCharacter());
+                    Console.Clear();
                 }
                 if (input == 2)
                 {
-
+                    ModifyCharacter(characters);
+                    Console.Clear();
                 }
                 if (input == 3)
                 {
-
+                    SaveCharacter(characters);
+                    Console.Clear();
                 }
                 if (input == 4)
                 {
-
+                    Console.WriteLine("Enter the file name: ");
+                    DeleteCharacter(AppDomain.CurrentDomain.BaseDirectory + Console.ReadLine() + ".txt");
+                    Console.Clear();
                 }
                 if (input == 5)
                 {
 
                 }
-            } while (input != 6);
-        }
-        static Character CreateCharacter()
-        {
-            Console.Write("Enter a name: ");
-            string name = Console.ReadLine();
-            Console.Write("Enter an age: ");
-            int age = int.Parse(Console.ReadLine());
-            Console.Write("Enter a height: ");
-            float height = float.Parse(Console.ReadLine());
-            Console.Write("Enter an eyecolor: ");
-            string eyecolor = Console.ReadLine();
-            Console.Write("Enter a gender: ");
-            string gender = Console.ReadLine();
-            
-        }
-        static void ModifyCharacter(Character character)
-        {
+                if (input == 6)
+                {
+
+                }
+            } while (input != 7);
 
         }
-        static void SaveCharacter(Character character)
+
+        static Character CreateCharacter()
         {
-            string path = AppDomain.CurrentDomain.BaseDirectory + character.name + ".txt";
-            using (StringWriter sw = new StringWriter(path))
+            Character character = new Character();
+
+            Console.Write("Enter a name: ");
+            character.name = Console.ReadLine();
+            Console.Write("Enter an age: ");
+            character.age = int.Parse(Console.ReadLine());
+            Console.Write("Enter a height: ");
+            character.height = float.Parse(Console.ReadLine());
+            Console.Write("Enter an eyecolor: ");
+            character.eyecolor = Console.ReadLine();
+            Console.Write("Enter a gender: ");
+            character.gender = Console.ReadLine();
+
+            Console.WriteLine("\n**Created**");
+            Console.ReadKey();
+
+            return character;
+
+        }
+
+        static Character ModifyCharacter(List<Character> characters)
+        {
+            Console.Write("Enter a file name: ");
+            string findname = Console.ReadLine();
+
+            Character modify = new Character();
+
+            for (int i = 0; i < characters.Count; i++)
             {
-                sw.WriteLine(character);
+                if (findname == characters[i].name)
+                {
+                    modify = characters[i];
+                }
             }
+
+            Console.Write("Enter a name: ");
+            modify.name = Console.ReadLine();
+            Console.Write("Enter an age: ");
+            modify.age = int.Parse(Console.ReadLine());
+            Console.Write("Enter a height: ");
+            modify.height = float.Parse(Console.ReadLine());
+            Console.Write("Enter an eyecolor: ");
+            modify.eyecolor = Console.ReadLine();
+            Console.Write("Enter a gender: ");
+            modify.gender = Console.ReadLine();
+
+            Console.WriteLine("\n**Modified**");
+            Console.ReadKey();
+
+            return modify;
         }
-        static bool DeleteCharacter(List<Character> characters, string characterName)
+
+        static void SaveCharacter(List<Character> characters)
         {
-            return true;
+            for (int i = 0; i < characters.Count; i++)
+            {
+                string path = AppDomain.CurrentDomain.BaseDirectory + characters[i].name + ".txt";
+                using (StreamWriter sw = new StreamWriter(path))
+                {
+                    sw.WriteLine(characters[i].name + "\r\n" + characters[i].age + "\r\n" + characters[i].height + "\r\n" + characters[i].eyecolor + "\r\n" + characters[i].gender);
+                }
+            }
+            Console.WriteLine("\n**Saved**");
+            Console.ReadKey();
         }
-        static Character LoadCharacter(string characterName)
+
+        static void DeleteCharacter(string path)
         {
-            return null;
+            File.Delete(path);
+            Console.WriteLine("\n**Deleted**");
+            Console.ReadKey();
         }
+
         static List<Character> LoadCharacters()
         {
             return null;
         }
+
         static void ListCharacter(List<Character> characters)
         {
 
