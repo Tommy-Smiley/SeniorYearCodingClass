@@ -13,6 +13,7 @@ namespace Character
         {
             int input = 0;
             List<Character> characters = new List<Character>();
+
             do
             {
                 Console.WriteLine("****************************");
@@ -20,11 +21,11 @@ namespace Character
                 Console.WriteLine("**2. Modify a Character");
                 Console.WriteLine("**3. Save a Character");
                 Console.WriteLine("**4. Delete a Character");
-                Console.WriteLine("**5. Load Existing Characters");
-                Console.WriteLine("**6. List Characters");
-                Console.WriteLine("**7. Exit");
+                Console.WriteLine("**5. List Characters");
+                Console.WriteLine("**6. Exit");
                 Console.WriteLine("****************************");
                 input = int.Parse(Console.ReadLine());
+
                 if (input == 1)
                 {
                     characters.Add(CreateCharacter());
@@ -32,6 +33,7 @@ namespace Character
                 }
                 if (input == 2)
                 {
+                    characters = LoadCharacters(AppDomain.CurrentDomain.BaseDirectory);
                     ModifyCharacter(characters);
                     Console.Clear();
                 }
@@ -48,13 +50,10 @@ namespace Character
                 }
                 if (input == 5)
                 {
-
+                    characters = LoadCharacters(AppDomain.CurrentDomain.BaseDirectory);
+                    ListCharacter(characters);
                 }
-                if (input == 6)
-                {
-
-                }
-            } while (input != 7);
+            } while (input != 6);
 
         }
 
@@ -82,6 +81,7 @@ namespace Character
 
         static Character ModifyCharacter(List<Character> characters)
         {
+
             Console.Write("Enter a file name: ");
             string findname = Console.ReadLine();
 
@@ -95,8 +95,6 @@ namespace Character
                 }
             }
 
-            Console.Write("Enter a name: ");
-            modify.name = Console.ReadLine();
             Console.Write("Enter an age: ");
             modify.age = int.Parse(Console.ReadLine());
             Console.Write("Enter a height: ");
@@ -133,14 +131,41 @@ namespace Character
             Console.ReadKey();
         }
 
-        static List<Character> LoadCharacters()
+        static List<Character> LoadCharacters(string path)
         {
-            return null;
+            List<Character> temp = new List<Character>();
+
+            foreach (string file in Directory.EnumerateFiles(path, "*.txt"))
+            {
+                using (StreamReader sr = new StreamReader(file))
+                {
+                    Character character = new Character();
+                    character.name = sr.ReadLine();
+                    character.age = int.Parse(sr.ReadLine());
+                    character.height = float.Parse(sr.ReadLine());
+                    character.eyecolor = sr.ReadLine();
+                    character.gender = sr.ReadLine();
+                    temp.Add(character);
+                }
+            }
+            return temp;
+
         }
 
         static void ListCharacter(List<Character> characters)
         {
-
+            for (int i = 0; i < characters.Count; i++)
+            {
+                Console.WriteLine(characters[i].name);
+                Console.WriteLine(characters[i].age);
+                Console.WriteLine(characters[i].height);
+                Console.WriteLine(characters[i].eyecolor);
+                Console.WriteLine(characters[i].gender);
+                Console.WriteLine();
+            }
+            Console.WriteLine("**Listed**");
+            Console.ReadKey();
+            Console.Clear();
         }
 
     }
