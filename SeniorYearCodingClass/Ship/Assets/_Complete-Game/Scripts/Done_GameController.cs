@@ -30,6 +30,7 @@ public class Done_GameController : MonoBehaviour
         gameOverText.text = "";
         StartCoroutine(SpawnWaves());
         score = 0;
+        highscore = 0;
         UpdateScore();
         Updatehighscore();
         
@@ -73,7 +74,7 @@ public class Done_GameController : MonoBehaviour
     public void AddScore(int newScoreValue)
     {
         score += newScoreValue;
-        highscore += score;
+        highscore += newScoreValue;
         UpdateScore();
         Updatehighscore();
     }
