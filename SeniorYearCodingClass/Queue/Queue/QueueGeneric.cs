@@ -4,50 +4,79 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Queue
+namespace QueueClass
 {
-    class QueueGeneric<T> : IEmptyable, IPrintale, ICountable
+    class Queue<T> : IEmptyable, IPrintable, ICountable where T : IComparable
     {
-        List<T> queue = new List<T>();
+        List<T> holder = new List<T>();
 
-        public QueueGeneric() {}
-
-        public void Enqueue (T val)
+        public Queue()
         {
-            queue.Insert(0, val);
+
         }
 
-        public T Dequeue()
+        public void enQueue(T val)
         {
-            T temp = queue[queue.Count - 1];
-            queue.RemoveAt(queue.Count - 1);
-            return temp;
+            holder.Add(val);
         }
-
+        
+        public T deQueue()
+        {
+            if (holder.Count != 0)
+            {
+                T x = holder[0];
+                holder.RemoveAt(0);
+                return x;
+            }
+            else
+            {
+                return default(T);
+            }
+        }
+        
         public T Peek()
         {
-            return queue[queue.Count - 1];
+            if (holder.Count != 0)
+            {
+                return holder[0];
+            }
+            else
+            {
+                return default(T);
+            }
+        }
+        
+        public void Print()
+        {
+            for (int i = 0; i < holder.Count; i++)
+            {
+                Console.Write(holder[i] + ", ");
+            }
         }
 
-        public void empty()
+        public List<int> Search(T val)
         {
-            throw new NotImplementedException();
+            List<int> positions = new List<int>();
+
+            for (int i = 0; i < holder.Count; i++)
+            {
+                if (val.CompareTo(holder[i]) == 0)
+                {
+                    positions.Add(i);
+                }
+            }
+            return positions;
         }
 
-        public void print()
+        public void Empty()
         {
-            throw new NotImplementedException();
+            holder.Clear();
         }
 
-        public void count()
+        public int Count()
         {
-            throw new NotImplementedException();
+            return holder.Count();
         }
 
-        int ICountable.count()
-        {
-            throw new NotImplementedException();
-        }
     }
-
 }

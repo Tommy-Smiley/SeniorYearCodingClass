@@ -4,32 +4,37 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Queue
+namespace QueueClass
 {
-    class Currencies : IComparable<Currencies>, IPrintale
+    class Currencies : IComparable<Currencies>
     {
-        int goldcount = 0;
-        int silvercount = 0;
-        int coppercount = 0;
+        int goldCount = 0;
+        int silverCount = 0;
+        int copperCount = 0;
 
-        public Currencies(int goldcount, int silvercount, int coppercount)
+        public Currencies(int goldCount, int silverCount, int copperCount)
         {
-            this.goldcount = goldcount;
-            this.silvercount = silvercount;
-            this.coppercount = coppercount;
+            this.goldCount = goldCount;
+            this.silverCount = silverCount;
+            this.copperCount = copperCount;
         }
 
         public int CompareTo(Currencies other)
         {
-            if (other == null) return 1;
-            int total = goldcount * 1000 + silvercount * 100 + coppercount;
-            int otherTotal = other.goldcount * 10000 + other.silvercount * 100 + other.coppercount;
+            if (other == null)
+            {
+                return 1;
+            }
+
+            int total = goldCount * 10000 + silverCount * 100 + copperCount;
+            int otherTotal = other.goldCount * 10000 + other.silverCount * 100 + other.copperCount;
             return total > otherTotal ? 1 : total < otherTotal ? -1 : 0;
         }
 
-        public void print()
+        public void Print()
         {
-            Console.WriteLine("You have " + goldcount + " gold, " + silvercount + " silver, and " + coppercount + " copper coins.");
+            Console.WriteLine("you have " + goldCount + " gold, " + silverCount + " silver" + " and " + copperCount + " copper.");
         }
+
     }
 }

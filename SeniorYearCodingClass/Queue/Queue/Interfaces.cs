@@ -4,20 +4,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Queue
+namespace QueueClass
 {
     interface IEmptyable
     {
-        void empty();
+        void Empty();
     }
-
-    interface IPrintale
+    interface IPrintable
     {
-        void print();
+        void Print();
     }
-
     interface ICountable
     {
-        int count();
+        int Count();
     }
 }
