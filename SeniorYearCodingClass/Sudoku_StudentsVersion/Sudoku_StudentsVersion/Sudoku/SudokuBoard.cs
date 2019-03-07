@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.IO;
 
 namespace Sudoku
 {
@@ -36,7 +35,8 @@ namespace Sudoku
                 {0,4,0,0,5,0,0,3,6 },
                 {7,0,3,0,1,8,0,0,0 }};
         }
-                /// <summary>
+
+        /// <summary>
         /// Overloaded constructor for a sudokuboard that reads in a file and generates
         /// the board based on that files information
         /// 
@@ -48,10 +48,7 @@ namespace Sudoku
         /// <param name="fileName">Name of the file you want to load</param>
         public SudokuBoard(string fileName)
         {
-            using (StreamReader sr = new StreamReader(AppDomain.CurrentDomain.BaseDirectory + fileName))
-            {
-
-            }
+            throw new NotImplementedException();
         }
 
 
@@ -119,7 +116,7 @@ namespace Sudoku
         /// </summary>
         public void PrintBoard()
         {
-            Console.WriteLine("Y  1  2  3   4  5  6   7  8  9");
+            Console.WriteLine("Y  0  1  2   3  4  5   6  7  8");
             Console.WriteLine("X  ---------------------------");
             for (int row = 0; row < 9; row++)
             {
@@ -127,7 +124,7 @@ namespace Sudoku
                 {
                     Console.WriteLine("  ---------+---------+---------");
                 }
-                Console.Write(row + 1 + "|");
+                Console.Write(row + "|");
                 for(int col = 0; col < 9; col++)
                 {
                     if (col % 3 == 0 && col != 0)
