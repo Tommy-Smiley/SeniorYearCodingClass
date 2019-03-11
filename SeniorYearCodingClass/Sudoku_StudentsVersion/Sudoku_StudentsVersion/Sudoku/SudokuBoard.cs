@@ -68,13 +68,53 @@ namespace Sudoku
         /// </returns>
         public bool VerifyBoard()
         {
-            throw new NotImplementedException();
 
             //Check all columns in the board, make sure they contain ONLY values 1-9. No duplicates, no exclusions
+
+            for (int i = 0; i < 9; i++)
+            {
+                for (int j = 0; j < 9; j++)
+                {
+                    if (Board[i, j] == 0)
+                    {
+                        return false;
+                    }
+                }
+            }
+
+            for (int i = 1; i <= 9; i++)
+            {
+                for (int j = 0; j < 9; j++)
+                {
+                    if (!Board[j, 0].Equals(i))
+                    {
+                        return false;
+                    }
+                }
+            }
+
+            for (int i = 1; i <= 9; i++)
+            {
+                for (int j = 0; j < 9; j++)
+                {
+                    if (!Board[0, j].Equals(i))
+                    {
+                        return false;
+                    }
+                }
+            }
+
+            bool cont = true;
+            while (cont)
+            {
+
+            }
 
             //Check all rows in the board, make sure they contain ONLY values 1-9. No duplicates, no exclusions
 
             //Check all boxes in the board, make sure they contain ONLY values 1-9. No duplicates, no exclusions
+
+            return true;
         }
 
         /// <summary>
@@ -125,7 +165,7 @@ namespace Sudoku
                     Console.WriteLine("  ---------+---------+---------");
                 }
                 Console.Write(row + "|");
-                for(int col = 0; col < 9; col++)
+                for (int col = 0; col < 9; col++)
                 {
                     if (col % 3 == 0 && col != 0)
                     {
@@ -167,6 +207,11 @@ namespace Sudoku
             //Apply the value
             Board[row, col] = val;
             return true;
+        }
+
+        public SudokuBoard(SudokuBoard curboard)
+        {
+            Array.Copy(curboard.Board, this.Board, this.Board.Length);
         }
     }
 }
